@@ -15,6 +15,7 @@ module.exports = function (config) {
 			{pattern: 'tests/javascript/node_modules/jquery/dist/jquery.min.js', included: false},
 			{pattern: 'tests/javascript/node_modules/jasmine-jquery/lib/jasmine-jquery.js', included: false},
 			{pattern: 'tests/javascript/node_modules/text/text.js', included: false},
+			{pattern: 'tests/javascript/node_modules/rebootstrap-bootstrap/docs/assets/js/bootstrap.min.js', included: false},
 			{pattern: 'media/system/js/*.js', included: false},
 			{pattern: 'tests/javascript/**/fixture.html', included: false},
 			{pattern: 'tests/javascript/**/spec.js', included: false},
@@ -56,7 +57,7 @@ module.exports = function (config) {
 		logLevel: config.LOG_INFO,
 
 		// enable / disable watching file and executing tests whenever any file changes
-		autoWatch: false,
+		autoWatch: true,
 
 		// start these browsers
 		// available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
@@ -64,7 +65,7 @@ module.exports = function (config) {
 
 		// Continuous Integration mode
 		// if true, Karma captures browsers, runs the tests and exits
-		singleRun: true,
+		singleRun: false,
 
 		// list of plugins
 		plugins: [
