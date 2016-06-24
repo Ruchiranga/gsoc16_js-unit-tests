@@ -18,7 +18,7 @@ require.config({
 
 	paths: {
 		'jquery': 'tests/javascript/node_modules/jquery/dist/jquery.min',
-		'bootstrap': 'tests/javascript/node_modules/rebootstrap-bootstrap/docs/assets/js/bootstrap.min',
+		'bootstrap': 'media/jui/js/bootstrap.min',
 		'jasmineJquery': 'tests/javascript/node_modules/jasmine-jquery/lib/jasmine-jquery',
 		'libs': 'media/system/js',
 		'testsRoot': 'tests/javascript',
