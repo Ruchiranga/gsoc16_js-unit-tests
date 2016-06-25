@@ -51,15 +51,10 @@ define(['jquery', 'testsRoot/repeatable/spec-setup', 'jasmineJquery'], function 
 		it('should change the CSS of the modal window', function () {
 			var modal = $('#jform_test_modal');
 			var rowsContainer = $('#jform_test').find('tbody').first();
-			var docHalfWidth = $(document).width() / 2;
 			var modalHalfWidth = modal.width() / 2;
 			var rowsHalfWidth = rowsContainer.width() / 2;
-			var marginLeft = modalHalfWidth >= docHalfWidth ? 0 : -modalHalfWidth;
 
 			expect(modal).toHaveCss({
-				'top': $(document).scrollTop() + $(window).height() * 0.2 + 'px',
-				'left': (modalHalfWidth >= docHalfWidth ? 0 : -modalHalfWidth ? docHalfWidth : 0) + 'px',
-				'margin-left': marginLeft + 'px',
 				'overflow': rowsHalfWidth > modalHalfWidth ? 'auto' : 'visible'
 			});
 		});
