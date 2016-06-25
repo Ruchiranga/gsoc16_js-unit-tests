@@ -16,8 +16,8 @@ define(['jquery', 'testsRoot/repeatable/spec-setup', 'jasmineJquery'], function 
 			expect($('#jform-test')).not.toContainElement('#jform_test_container');
 		});
 
-		it('should register on show event on the modal element', function () {
-			expect($('#jform_test_modal')).toHandle('show');
+		it('should register on shown event on the modal element', function () {
+			expect($('#jform_test_modal')).toHandle('shown');
 		});
 
 		it('should fix name attributes on the repeatable element contents', function () {
