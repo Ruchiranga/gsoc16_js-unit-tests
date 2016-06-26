@@ -35,7 +35,8 @@ define(['jquery', 'testsRoot/caption/spec-setup', 'jasmineJquery'], function ($)
 		var $element = $('img#no-options');
 		it('Should have container CSS as {width: element.width, float: none}', function () {
 			expect($element.parent()).toHaveCss({
-				float: 'none'
+				float: 'none',
+				width: $element.width() + 'px'
 			});
 		});
 	});
