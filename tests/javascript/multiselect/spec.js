@@ -26,7 +26,7 @@ define(['jquery', 'testsRoot/multiselect/spec-setup', 'jasmineJquery'], function
             expect($("#ms-cb3")).toBeChecked();
         });
         it('should not make the ms-cb4 checkbox checked', function () {
-            expect($("#ms-cb3")).not.toBeChecked();
+            expect($("#ms-cb4")).not.toBeChecked();
         });
     });
 });
